@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Books</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style_browse.css" />
+  </head>
+  <body>
+    <header class="header">
+          <a href="index.html" class="logo"> <i class="fas fa-book"></i> BookWorm </a>  
+  </header>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search book name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Fiction')">
+          Fiction
+        </button>
+        <button class="button-value" onclick="filterProduct('Horror')">
+          Horror
+        </button>
+        <button class="button-value" onclick="filterProduct('Romance')">
+          Romance
+        </button>
+        <button class="button-value" onclick="filterProduct('Mystery')">
+          Mystery
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
