@@ -688,6 +688,8 @@ body {
 .otherbooks .container{
   display: flex;
   background: white;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .otherbooks-text {
